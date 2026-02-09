@@ -4,9 +4,16 @@
  */
 module.exports = {
   onLoad(api) {
-    // Add a ribbon button to the Home tab
+    // Create a dedicated Add-Ins ribbon tab for extensions
+    api.ui.addRibbonTab({
+      id: 'add-ins',
+      label: 'Add-Ins',
+      order: 100,
+    });
+
+    // Add a ribbon button to the Add-Ins tab
     api.ui.addRibbonButton({
-      tab: 'home',
+      tab: 'add-ins',
       group: 'Statistics',
       label: 'Shape Count',
       icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 4-6"/></svg>',
