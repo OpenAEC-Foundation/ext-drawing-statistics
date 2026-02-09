@@ -1,0 +1,13 @@
+{
+  "id": "drawing-statistics",
+  "name": "Drawing Statistics",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "author": "OpenAEC Community",
+  "description": "Displays shape count and drawing statistics. Adds a ribbon button and a terminal command.",
+  "category": "Utility",
+  "main": "main.js",
+  "permissions": ["commands", "ribbon", "events"],
+  "repository": "https://github.com/OpenAEC-Foundation/ext-drawing-statistics",
+  "tags": ["statistics", "utility", "shapes", "count"]
+}
